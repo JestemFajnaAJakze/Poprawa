@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="lab6_v2:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/lab6_v2_ear_exploded.ear</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="lab6_v2/javaeeApplication/javaEEApplication" />
+      <element id="directory" name="web.war">
+        <element id="artifact" artifact-name="lab6_v2:war exploded" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="jersey-all-2.22.2" />
+      </element>
+      <element id="javaee-facet-resources" facet="lab6_v2/ejb/EJB" />
+    </root>
+  </artifact>
+</component>
