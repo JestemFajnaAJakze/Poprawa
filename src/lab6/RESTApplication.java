@@ -13,7 +13,6 @@ public class RESTApplication extends ResourceConfig {
     public RESTApplication() {
 
         packages("lab6");
-        register(AirqualityREST.class);
         register(SubstanceREST.class);
         register(JacksonFeature.class);
 
