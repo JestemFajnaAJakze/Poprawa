@@ -1,0 +1,206 @@
+{
+	"id": "26fdf35f-ab7f-9318-3d44-f1e6f4e61991",
+	"name": "StacjeBadawcze",
+	"description": "",
+	"order": [
+		"240b770b-6f6f-ec8f-32c0-301ca872ac0d",
+		"2521ea5e-2c13-b0ca-4648-42e197140467",
+		"8977f4fc-477d-c554-ee28-b32518bdc98a",
+		"f5034b18-009b-32dc-ca48-f955c4ebf4dd",
+		"1b9baf07-beba-9225-f5ef-4dc20d982685",
+		"17c4d72d-ec3a-a807-afd8-014d8c4dd704"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1506366558821,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "17c4d72d-ec3a-a807-afd8-014d8c4dd704",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/lab6_v2Web/substances/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "26fdf35f-ab7f-9318-3d44-f1e6f4e61991",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/lab6_v2Web/substances/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511883666092,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n\t\"substanceId\" : \"3\",\r\n\t\"substanceName\" : \"CO\",\r\n\t\"unit\" : \"kilogramy\",\r\n\t\"treshold\" : \"6\" \t\r\n} \r\n"
+		},
+		{
+			"id": "1b9baf07-beba-9225-f5ef-4dc20d982685",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/lab6_v2Web/substances/4",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "26fdf35f-ab7f-9318-3d44-f1e6f4e61991",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/lab6_v2Web/substances/4",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511883659017,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n\t\"substanceId\" : \"3\",\r\n\t\"substanceName\" : \"CO\",\r\n\t\"unit\" : \"kilogramy\",\r\n\t\"treshold\" : \"6\" \t\r\n} \r\n"
+		},
+		{
+			"id": "240b770b-6f6f-ec8f-32c0-301ca872ac0d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/lab6_v2Web/airquality",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "26fdf35f-ab7f-9318-3d44-f1e6f4e61991",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/lab6_v2Web/airquality",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1506366596280,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n\t\"station\" : {\r\n\t\t\"stationId\" : \"1\",\r\n\t\t\"address\" : {\r\n\t\t\t\"city\" : \"miasto\",\r\n\t\t\t\"street\" : \"ulica\"\r\n\t\t}\r\n\t},\r\n\t\t\t\r\n\t\"substances\" : [{\r\n\t\t\t\"type\" : \"identyfikator rodzaju substancji\",\r\n\t\t\t\"substanceName\" : \"nazwa substancji pobrana ze słownika\",\r\n\t\t\t\"value\" : \"20.0\"\r\n\t}, \r\n\t{\r\n\t\t\t\"type\" : \"identyfikator rodzaju substancji\",\r\n\t\t\t\"substanceName\" : \"nazwa substancji pobrana ze słownika\",\r\n\t\t\t\"value\" : \"30.0\"\r\n\t}]\r\n} \r\n"
+		},
+		{
+			"id": "2521ea5e-2c13-b0ca-4648-42e197140467",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/lab6_v2Web/substances/3",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "26fdf35f-ab7f-9318-3d44-f1e6f4e61991",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/lab6_v2Web/substances/3",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511883614523,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n\t\"substanceId\" : \"3\",\r\n\t\"substanceName\" : \"CO2\",\r\n\t\"unit\" : \"kilogramy\",\r\n\t\"treshold\" : \"65\" \t\r\n} \r\n"
+		},
+		{
+			"id": "8977f4fc-477d-c554-ee28-b32518bdc98a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/lab6_v2Web/substances/3",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "26fdf35f-ab7f-9318-3d44-f1e6f4e61991",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/lab6_v2Web/substances/3",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511883623394,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n\t\"substanceId\" : \"3\",\r\n\t\"substanceName\" : \"CO2\",\r\n\t\"unit\" : \"kilogramy\",\r\n\t\"treshold\" : \"65\" \t\r\n} \r\n"
+		},
+		{
+			"id": "f5034b18-009b-32dc-ca48-f955c4ebf4dd",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/lab6_v2Web/substances/3",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PATCH",
+			"collectionId": "26fdf35f-ab7f-9318-3d44-f1e6f4e61991",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/lab6_v2Web/substances/3",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511883637092,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n\t\"substanceId\" : \"3\",\r\n\t\"substanceName\" : \"CO2\",\r\n\t\"unit\" : \"kilogramy\",\r\n\t\"treshold\" : \"65\" \t\r\n} \r\n"
+		}
+	]
+}
