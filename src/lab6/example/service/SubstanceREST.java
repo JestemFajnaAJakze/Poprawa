@@ -18,6 +18,7 @@ import java.util.List;
 public class SubstanceREST {
 
     private static final String REST_URI = "http://localhost:8181/lab6_v2Web";
+    private static final String REST_URI_STACJE_BADAWCZE = "http://localhost:8282/lab6_v2Web";
     private Client restClient;
     private WebTarget resourceTarget;
 
@@ -37,7 +38,7 @@ public class SubstanceREST {
             }
             substances.add(substancePOJO);
         }
-        updateEmulator();
+        updateEmulatorAndStacjeBadawczeSubstancesLibrary();
         return Response.status(Response.Status.CREATED).build();
     }
 
@@ -74,7 +75,7 @@ public class SubstanceREST {
                 substances.get(i).setSubstanceName(substancePOJO.getSubstanceName());
                 substances.get(i).setUnit(substancePOJO.getUnit());
                 substances.get(i).setTreshold(substancePOJO.getTreshold());
-                updateEmulator();
+                updateEmulatorAndStacjeBadawczeSubstancesLibrary();
                 return Response.ok(substances.get(i), MediaType.APPLICATION_JSON).build();
             }
         }
@@ -88,7 +89,7 @@ public class SubstanceREST {
         for (int i = 0; i < substances.size(); i++) {
             if (substances.get(i).getSubstanceId().equals(id)) {
                 substances.get(i).setTreshold(substancePOJO.getTreshold());
-                updateEmulator();
+                updateEmulatorAndStacjeBadawczeSubstancesLibrary();
                 return Response.ok(substances.get(i), MediaType.APPLICATION_JSON).build();
             }
         }
@@ -96,6 +97,18 @@ public class SubstanceREST {
     }
 
 
+    private void updateEmulatorAndStacjeBadawczeSubstancesLibrary(){
+        updateEmulator();
+        updateStacjeBadawczeLibrary();
+    }
+
+    private void updateStacjeBadawczeLibrary() {
+        restClient = ClientBuilder.newClient();
+        resourceTarget = restClient.target(REST_URI_STACJE_BADAWCZE);
+        WebTarget methodTarget = resourceTarget.path("/literary-substances/");
+        Invocation.Builder invocationBuilder = methodTarget.request(MediaType.APPLICATION_JSON);
+        invocationBuilder.post(Entity.entity(substances, MediaType.APPLICATION_JSON));
+    }
 
     private void updateEmulator() {
         restClient = ClientBuilder.newClient();
